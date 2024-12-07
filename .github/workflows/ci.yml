@@ -25,6 +25,7 @@ jobs:
       - uses: ./
         with:
           connection-string: mongodb://root:root@database:27017
+          output-password: '12345678'
       - uses: actions/upload-artifact@v4
         with:
           name: dump-mongo${{ matrix.mongo-version }}

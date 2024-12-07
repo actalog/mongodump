@@ -1,8 +1,13 @@
 name: '@actalog/mongodump'
-description: GitHub Action for creating a binary export of a database's contents
+description: Creates a binary export of a database's contents
+branding:
+  icon: 'database'
+  color: 'green'
 
 inputs:
   connection-string:
+    required: true
+  output-password:
     required: true
 
 runs:
@@ -10,7 +15,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.connection-string }}
-
-branding:
-  icon: 'database'
-  color: 'green'
+    - ${{ inputs.output-password }}

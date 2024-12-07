@@ -33,6 +33,10 @@ jobs:
         with:
           connection-string: ${{ secrets.CONNECTION_STRING }}
           output-password: ${{ secrets.OUTPUT_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dump
+          path: ${{ github.workspace }}/dump
 ```
 
 ### 2. Action Inputs

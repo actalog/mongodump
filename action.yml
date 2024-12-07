@@ -1,5 +1,8 @@
 name: '@actalog/mongodump'
 description: GitHub Action for creating a binary export of a database's contents
+branding:
+  icon: 'database'
+  color: 'green'
 
 inputs:
   connection-string:
@@ -10,7 +13,3 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.connection-string }}
-
-branding:
-  icon: 'database'
-  color: 'green'

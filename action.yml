@@ -1,5 +1,5 @@
 name: '@actalog/mongodump'
-description: GitHub Action for creating a binary export of a database's contents
+description: Creates a binary export of a database's contents
 branding:
   icon: 'database'
   color: 'green'

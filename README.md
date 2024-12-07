@@ -29,10 +29,14 @@ jobs:
     name: Mongodump
     runs-on: ubuntu-latest
     steps:
-      - uses: actalog/mongodump@v1
+      - uses: actalog/mongodump@v2
         with:
           connection-string: ${{ secrets.CONNECTION_STRING }}
           output-password: ${{ secrets.OUTPUT_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dump
+          path: ${{ github.workspace }}/dump
 ```
 
 ### 2. Action Inputs

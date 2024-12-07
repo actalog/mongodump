@@ -29,7 +29,7 @@ jobs:
     name: Mongodump
     runs-on: ubuntu-latest
     steps:
-      - uses: actalog/mongodump@v1
+      - uses: actalog/mongodump@v2
         with:
           connection-string: ${{ secrets.CONNECTION_STRING }}
           output-password: ${{ secrets.OUTPUT_PASSWORD }}

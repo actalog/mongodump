@@ -1,4 +1,4 @@
-# Mongodump
+# @actalog/mongodump
 
 [![CI](https://github.com/actalog/mongodump/actions/workflows/ci.yml/badge.svg)](https://github.com/actalog/mongodump/actions/workflows/ci.yml)
 [![CD](https://github.com/actalog/mongodump/actions/workflows/cd.yml/badge.svg)](https://github.com/actalog/mongodump/actions/workflows/cd.yml)
